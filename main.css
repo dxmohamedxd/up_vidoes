@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+    font-family: 'Cairo', sans-serif;
+
+}
+.container{
+    width: 70%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Cairo', sans-serif;
+}
+
+.container img{
+    margin-top:10px;
+    width: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+}
+.form{
+    margin:auto;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    background-color: silver;
+    padding: 15px;
+    width: 324px;
+    border-radius: 0 0 15px 15px;
+    font-family:'Cairo', sans-serif ;
+}
+#subject,#title{
+    padding: 5px;
+    width: 260px;
+    font-family:'Cairo', sans-serif ;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+input[type="file"]{
+   width: 250px ;
+    /*margin-bottom: 15px;*/
+    font-family:'Cairo', sans-serif;
+    padding: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #6c757d;
+    margin: 10px;
+    color: silver;
+}
+#submit{
+    border:none;
+    font-size: 19px;
+    font-weight: bold;
+    width: 260px;
+    margin-bottom:5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #1a1e21;
+    color: white;
+    /*float: right;*/
+    font-family:'Cairo', sans-serif ;
+}
+#submit:hover{
+    background-color: #D4AC0D;
+}
+.link{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: tomato;
+}

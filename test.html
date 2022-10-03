@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+    <title> رفع الفيديوهات </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-video">
+        <div class="vedio">
+            <video src="vedio/ved.mp4" class="vedio-player"></video>
+        </div>
+        <div class="footer">
+            <div class="footer-text">
+                <h3>Developer Mohamed Ali 🎶🎶 </h3>
+                <p>Welcome To My App</p>
+                <div class="img-marq">
+                    <img src="image/sign.png">
+<!--                    marquee هو نص متحرك -->
+                    <marquee> Hello World To My Apps New Best</marquee>
+                </div>
+            </div>
+            <img src="image/SIU.jpg" class="img-play">
+        </div>
+        <div class="vedio">
+            <video src="vedio/Learn.mp4" class="vedio-player"></video>
+        </div>
+        <div class="footer">
+            <div class="footer-text">
+                <h3>Developer Mohamed Ali 🎶🎶 </h3>
+                <p>Welcome To My App</p>
+                <div class="img-marq">
+                    <img src="image/sign.png">
+                    <!--                    marquee هو نص متحرك -->
+                    <marquee> Hello World To My Apps New Best</marquee>
+                </div>
+            </div>
+            <img src="image/SIU.jpg" class="img-play">
+        </div>
+    </div>
+    </div>
+<script>
+    // تحديد كل عنصر
+    const vedios = document.querySelectorAll("video");
+    //     تكرر الفيديو
+    for( const vedio of vedios){
+
+        vedio.addEventListener('click',function () {
+        if (vedio.paused){
+            vedio.play();
+        }else {
+            vedio.pause();
+        }
+        })
+
+    }
+</script>
+</body>
+</html>

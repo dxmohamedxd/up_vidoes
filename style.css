@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-family: 'Cairo', sans-serif;
+}
+.app-video{
+    position: relative;
+    height: 600px;
+    background-color: black;
+    overflow: scroll;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+    border:1px solid white;
+    border-radius: 20px;
+    scroll-snap-type: y mandatory;
+}
+/*
+
+*/
+.app-video::-webkit-scrollbar{
+    display: none;
+}
+.vedio{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: black;
+    scroll-snap-align: start;
+}
+.vedio-player{
+    /*   عمل تتضمن للفيديو */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.footer {
+    display: flex;
+    position: relative;
+    bottom: 130px;
+    margin-left: 20px;
+}
+
+@keyframes rotate{
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+   transform: rotate(360deg);
+    }
+
+}
+.img-play{
+    width: 55px;
+    position:absolute;
+    right: 25px;
+    bottom: 25px;
+    animation: rotate infinite 5s linear;
+}
+.footer-text{
+    flex: 1;
+}
+.footer-text h3{
+  padding-bottom: 30px;
+}
+.img-marq{
+    display: flex;
+    align-items: center;
+    width: 390px;
+}
+.img-marq img{
+    width: 43px;
+    margin-top: 4px;
+}
+.img-marq marquree{
+    margin-left: 3px;
+    margin-top: 10px;
+    width: 65%;
+}
+html{
+    scroll-snap-type: y mandatory;
+}
